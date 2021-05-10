@@ -91,7 +91,7 @@ module.exports = [
           ],
           device: {
             geolocation: {},
-            userAgent: "MKTSRV/60709d6ece303f001b7d7ec1"
+            userAgent: "MKTSRV/60709d619a3154001bb0d85d"
           },
           receivers: [
             {
@@ -257,7 +257,7 @@ module.exports = [
           ],
           device: {
             geolocation: {},
-            userAgent: "MKTSRV/606f0a6a5bdb5b001b6f2d84"
+            userAgent: "MKTSRV/606f0a2c1c4cd1001b781f0f"
           },
           receivers: [
             {
@@ -400,7 +400,7 @@ module.exports = [
           ],
           device: {
             geolocation: {},
-            userAgent: "MKTSRV/606f0ae35bdb5b001b6f2d92"
+            userAgent: "MKTSRV/606f0acf1c4cd1001b781f11"
           },
           receivers: [
             {
@@ -543,7 +543,7 @@ module.exports = [
           ],
           device: {
             geolocation: {},
-            userAgent: "MKTSRV/606f0c185bdb5b001b6f2da5"
+            userAgent: "MKTSRV/606f0bff1c4cd1001b781f13"
           },
           receivers: [
             {
@@ -682,7 +682,7 @@ module.exports = [
           ],
           device: {
             geolocation: {},
-            userAgent: "MKTSRV/606f0c805bdb5b001b6f2db5"
+            userAgent: "MKTSRV/606f0c711c4cd1001b781f15"
           },
           receivers: [
             {
@@ -825,7 +825,7 @@ module.exports = [
           ],
           device: {
             geolocation: {},
-            userAgent: "MKTSRV/606f0cc05bdb5b001b6f2dc3"
+            userAgent: "MKTSRV/606f0cae1c4cd1001b781f17"
           },
           receivers: [
             {
