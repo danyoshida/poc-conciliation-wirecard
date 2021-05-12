@@ -76,10 +76,6 @@ module.exports = [
               }
             }
           ],
-          device: {
-            geolocation: {},
-            userAgent: "MKTSRV/609bf72acf0ec0001b9f6578"
-          },
           refunds: [
             {
               id: "REF-BJ63A2KQIAS9",
