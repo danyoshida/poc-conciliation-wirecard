@@ -1,6 +1,248 @@
 module.exports = [
   {
     id: "REC-HJIA6SF8S5OJ",
+    createdAt: "2021-05-12T16:08:58.057-03",
+    type: "SALES",
+    authorizedPayments: {
+      summary: {
+        count: 2,
+        amount: 100000,
+      },
+      resources: [
+        {
+          id: "PAY-HVHTQR0CVOF6",
+          status: "REFUNDED",
+          delayCapture: true,
+          amount: {
+            total: 6500,
+            gross: 6500,
+            fees: 374,
+            refunds: 6126,
+            liquid: 0,
+            currency: "BRL"
+          },
+          installmentCount: 1,
+          fundingInstrument: {
+            creditCard: {
+              id: "CRC-SG4VUNMNNMA2",
+              brand: "MASTERCARD",
+              first6: "555566",
+              last4: "8884",
+              store: true,
+              holder: {
+                birthdate: "1991-04-12",
+                birthDate: "1991-04-12",
+                taxDocument: {
+                  type: "CPF",
+                  number: "42494201837"
+                },
+                fullname: "Raphael de Falco Ayres"
+              }
+            },
+            method: "CREDIT_CARD"
+          },
+          acquirerDetails: {
+            authorizationNumber: "T12996",
+            taxDocument: {
+              type: "CNPJ",
+              number: "01027058000191"
+            }
+          },
+          fees: [
+            {
+              type: "TRANSACTION",
+              amount: 374
+            }
+          ],
+          escrows: [
+            {
+              id: "ECW-6U99LNROJY2Q",
+              status: "RELEASED",
+              amount: 6500,
+              createdAt: "2021-05-12T12:41:37.000-03",
+              updatedAt: "2021-05-12T12:41:37.000-03",
+              _links: {
+                self: {
+                  href: "https://sandbox.moip.com.br/v2/escrows/ECW-6U99LNROJY2Q"
+                },
+                order: {
+                  href: "https://sandbox.moip.com.br/v2/orders/ORD-T8IMV9XDU3XM",
+                  title: "ORD-T8IMV9XDU3XM"
+                },
+                payment: {
+                  href: "https://sandbox.moip.com.br/v2/payments/PAY-HVHTQR0CVOF6",
+                  title: "PAY-HVHTQR0CVOF6"
+                }
+              }
+            }
+          ],
+          device: {
+            geolocation: {},
+            userAgent: "MKTSRV/609bf72acf0ec0001b9f6578"
+          },
+          refunds: [
+            {
+              id: "REF-BJ63A2KQIAS9",
+              status: "COMPLETED",
+              events: [
+                {
+                  type: "REFUND.COMPLETED",
+                  createdAt: "2021-05-12T12:46:00.000-03"
+                },
+                {
+                  type: "REFUND.REQUESTED",
+                  createdAt: "2021-05-12T12:46:00.000-03"
+                }
+              ],
+              amount: {
+                total: 6500,
+                fees: 0,
+                currency: "BRL"
+              },
+              receiversDebited: [
+                {
+                  amount: -374,
+                  moipAccount: "MPA-4C55165A593A"
+                },
+                {
+                  amount: 3250,
+                  moipAccount: "MPA-EF9934E5E1E7"
+                },
+                {
+                  amount: 3250,
+                  moipAccount: "MPA-A9F95D38CF64"
+                }
+              ],
+              type: "FULL",
+              refundingInstrument: {
+                creditCard: {
+                  brand: "MASTERCARD",
+                  first6: "555566",
+                  last4: "8884",
+                  store: true
+                },
+                method: "CREDIT_CARD"
+              },
+              createdAt: "2021-05-12T12:46:00.000-03",
+              _links: {
+                self: {
+                  href: "https://sandbox.moip.com.br/v2/refunds/REF-BJ63A2KQIAS9"
+                },
+                order: {
+                  href: "https://sandbox.moip.com.br/v2/orders/ORD-T8IMV9XDU3XM",
+                  title: "ORD-T8IMV9XDU3XM"
+                },
+                payment: {
+                  href: "https://sandbox.moip.com.br/v2/payments/PAY-HVHTQR0CVOF6",
+                  title: "PAY-HVHTQR0CVOF6"
+                }
+              }
+            }
+          ],
+          events: [
+            {
+              type: "PAYMENT.PRE_AUTHORIZED",
+              createdAt: "2021-05-12T15:41:37.000-03"
+            },
+            {
+              type: "PAYMENT.REFUNDED",
+              createdAt: "2021-05-12T12:46:00.000-03"
+            },
+            {
+              type: "PAYMENT.AUTHORIZED",
+              createdAt: "2021-05-12T12:44:55.000-03"
+            },
+            {
+              type: "PAYMENT.CREATED",
+              createdAt: "2021-05-12T12:41:37.000-03"
+            },
+            {
+              type: "PAYMENT.IN_ANALYSIS",
+              createdAt: "2021-05-12T12:41:37.000-03"
+            }
+          ],
+          receivers: [
+            {
+              moipAccount: {
+                id: "MPA-4C55165A593A",
+                login: "raphaeldefalcoayres@gmail.com",
+                fullname: "Raphael de Falco Ayres"
+              },
+              type: "PRIMARY",
+              amount: {
+                total: 0,
+                currency: "BRL",
+                fees: 0,
+                refunds: 0
+              },
+              feePayor: true
+            },
+            {
+              moipAccount: {
+                id: "MPA-EF9934E5E1E7",
+                login: "douglas.muraoka@unifesp.br",
+                fullname: "ASPEN"
+              },
+              type: "SECONDARY",
+              amount: {
+                total: 3250,
+                currency: "BRL",
+                fees: 0,
+                refunds: 3250
+              },
+              feePayor: false
+            },
+            {
+              moipAccount: {
+                id: "MPA-A9F95D38CF64",
+                login: "muraoka.douglas@gmail.com",
+                fullname: "Rossi da Silva"
+              },
+              type: "SECONDARY",
+              amount: {
+                total: 3250,
+                currency: "BRL",
+                fees: 0,
+                refunds: 3250
+              },
+              feePayor: false
+            }
+          ],
+          device: {
+            geolocation: {},
+            userAgent: "MKTSRV/609bf72acf0ec0001b9f6578"
+          },
+          _links: {
+            self: {
+              href: "https://sandbox.moip.com.br/v2/payments/PAY-HVHTQR0CVOF6"
+            },
+            order: {
+              href: "https://sandbox.moip.com.br/v2/orders/ORD-T8IMV9XDU3XM",
+              title: "ORD-T8IMV9XDU3XM"
+            }
+          },
+          createdAt: "2021-05-12T12:41:37.000-03",
+          updatedAt: "2021-05-12T12:46:00.000-03"
+        }
+      ],
+    },
+    reversedPayments: {
+      summary: {
+        count: 0,
+        amount: 0,
+      },
+      resources: [],
+    },
+    refundedPayments: {
+      summary: {
+        count: 0,
+        amount: 0,
+      },
+      resources: [],
+    },
+  },
+  {
+    id: "REC-HJIA6SF8S5OJ",
     createdAt: "2021-04-09T16:08:58.057-03",
     type: "SALES",
     authorizedPayments: {
