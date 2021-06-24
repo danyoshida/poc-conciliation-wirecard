@@ -2602,4 +2602,152 @@ module.exports = [
       ],
     },
   },
+  {
+    id: "REC-321",
+    createdAt: "2021-06-24T10:49:31.199-03",
+    type: "SALES",
+    authorizedPayments: {
+      summary: {
+        count: 1,
+        amount: 65000,
+      },
+      resources: [
+        {
+          id: "PAY-90LI0ML1RKVC",
+          status: "AUTHORIZED",
+          delayCapture: true,
+          amount: {
+              total: 6500,
+              gross: 6500,
+              fees: 374,
+              refunds: 0,
+              liquid: 6126,
+              currency: "BRL"
+          },
+          installmentCount: 1,
+          fundingInstrument: {
+              creditCard: {
+                  id: "CRC-SG4VUNMNNMA2",
+                  brand: "MASTERCARD",
+                  "first6": "555566",
+                  "last4": "8884",
+                  store: true,
+                  holder: {
+                      birthdate: "1994-08-25",
+                      birthDate: "1994-08-25",
+                      taxDocument: {
+                          type: "CPF",
+                          number: "42494201837"
+                      },
+                      fullname: "DANIEL YOSHIDA"
+                  }
+              },
+              method: "CREDIT_CARD"
+          },
+          acquirerDetails: {
+              authorizationNumber: "T12996",
+              taxDocument: {
+                  type: "CNPJ",
+                  number: "01027058000191"
+              }
+          },
+          fees: [{
+              type: "TRANSACTION",
+              amount: 374
+          }],
+          escrows: [{
+              id: "ECW-MOSJS28050VV",
+              status: "HOLD_PENDING",
+              amount: 6500,
+              createdAt: "2021-06-24T10:49:31.000-03",
+              updatedAt: "2021-06-24T10:49:31.000-03",
+              _links: {
+                  self: {
+                      href: "https://sandbox.moip.com.br/v2/escrows/ECW-MOSJS28050VV"
+                  },
+                  order: {
+                      href: "https://sandbox.moip.com.br/v2/orders/ORD-TK6U8CKA7FIX",
+                      title: "ORD-TK6U8CKA7FIX"
+                  },
+                  payment: {
+                      href: "https://sandbox.moip.com.br/v2/payments/PAY-90LI0ML1RKVC",
+                      title: "PAY-90LI0ML1RKVC"
+                  }
+              }
+          }],
+          events: [{
+              type: "PAYMENT.PRE_AUTHORIZED",
+              createdAt: "2021-06-24T13:49:32.000-03"
+          }, {
+              type: "PAYMENT.AUTHORIZED",
+              createdAt: "2021-06-24T10:57:09.000-03"
+          }, {
+              type: "PAYMENT.IN_ANALYSIS",
+              createdAt: "2021-06-24T10:49:32.000-03"
+          }, {
+              type: "PAYMENT.CREATED",
+              createdAt: "2021-06-24T10:49:31.000-03"
+          }],
+          receivers: [{
+              moipAccount: {
+                  id: "MPA-4C55165A593A",
+                  login: "raphaeldefalcoayres@gmail.com",
+                  fullname: "Raphael de Falco Ayres"
+              },
+              type: "PRIMARY",
+              amount: {
+                  total: 0,
+                  currency: "BRL",
+                  fees: 374,
+                  refunds: 0
+              },
+              feePayor: true
+          }, {
+              moipAccount: {
+                  id: "MPA-EF9934E5E1E7",
+                  login: "douglas.muraoka@unifesp.br",
+                  fullname: "ASPEN"
+              },
+              type: "SECONDARY",
+              amount: {
+                  total: 3250,
+                  currency: "BRL",
+                  fees: 0,
+                  refunds: 0
+              },
+              feePayor: false
+          }, {
+              moipAccount: {
+                  id: "MPA-A9F95D38CF64",
+                  login: "muraoka.douglas@gmail.com",
+                  fullname: "Rossi da Silva"
+              },
+              type: "SECONDARY",
+              amount: {
+                  total: 3250,
+                  currency: "BRL",
+                  fees: 0,
+                  refunds: 0
+              },
+              feePayor: false
+          }],
+          device: {
+              geolocation: {},
+              userAgent: "MKTSRV/60d48d501c6ff4001bef8425"
+          },
+          _links: {
+              self: {
+                  href: "https://sandbox.moip.com.br/v2/payments/PAY-90LI0ML1RKVC"
+              },
+              order: {
+                  href: "https://sandbox.moip.com.br/v2/orders/ORD-TK6U8CKA7FIX",
+                  title: "ORD-TK6U8CKA7FIX"
+              }
+          },
+          createdAt: "2021-06-24T10:49:31.000-03",
+          updatedAt: "2021-06-24T10:57:09.000-03"
+        }
+      ]
+    }
+  }
 ];
